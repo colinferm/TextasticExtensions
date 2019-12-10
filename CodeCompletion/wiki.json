@@ -1,0 +1,73 @@
+{
+	"description": "Textastic Code Completion for SFS Wikis",
+	"uuid": "CACA68A6-B67C-428C-BB0C-79E84D19C17B",
+	"completionSets": [
+		{
+			"name": "sfs-charts.chart-tag",
+			//"defaultAppend": " type=\"$1\" category=\"$2\" style=\"$3\" title=\"$4\"/>",
+			"defaultAppend": " type=\"$1\" />",
+			//"defaultAppend": " />",
+			"strings": [
+				"statschart"
+			]
+		},
+		{
+			"name": "sfs-charts.chart-attr",
+			"defaultAppend": "=\"$1\"$0",
+			"strings": [
+				"type",
+				"category",
+				"style",
+				"title"
+			]
+		},
+		{
+			"name": "sfs-charts.chart-type-attr-values",
+			"defaultAppend": "$0",
+			"strings": [
+				"season-investment-by-type",
+				"shark-amt-investment",
+				"shark-season-investment",
+				"categories-by-season"
+			]
+		},
+		{
+			"name": "sfs-charts.chart-style-attr-values",
+			"defaultAppend": "$0",
+			"strings": [
+				"size-half left",
+				"size-half right",
+				"size-full"
+			]
+		}
+	],
+	"contexts": [
+		{
+			"description": "Chart completions",
+			"scope": "text.html - source - comment - string",
+			"pattern": "<([a-zA-Z0-9]*)",
+			"completionCaptureIndex": 1,
+			"completionSetNames": [
+				"sfs-charts.chart-tag"
+			]
+		},
+		{
+			"description": "Chart Attribute Completion",
+			"scope": "text.html meta.tag",
+			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:(?:\\s([a-zA-Z0-9-]+))|\\s)",
+			"completionCaptureIndex": 2,
+			"completionSetNames": [
+				"sfs-charts.chart-attr",
+			]
+		},
+		{
+			"description": "Chart Attribute Values Completion",
+			"scope": "text.html meta.tag string.quoted",
+			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:\\s([a-zA-Z0-9-]+)\\s*=\\s*(?:[\"'])([a-zA-Z0-9-]*))",
+			"completionCaptureIndex": 3,
+			"completionSetNames": [
+				"sfs-charts.chart-$2-attr-values"
+			]
+		}
+	]
+}
