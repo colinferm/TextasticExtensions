@@ -5,7 +5,7 @@
 		{
 			"name": "sfs-charts.chart-tag",
 			//"defaultAppend": " type=\"$1\" category=\"$2\" style=\"$3\" title=\"$4\"/>",
-			"defaultAppend": " type=\"$1\" />",
+			"defaultAppend": " type=\"${1:value}\" />",
 			//"defaultAppend": " />",
 			"strings": [
 				"statschart"
@@ -13,11 +13,13 @@
 		},
 		{
 			"name": "sfs-charts.chart-attr",
-			"defaultAppend": "=\"$1\"$0",
+			"defaultAppend": "=\"${1:value}\"$0",
 			"strings": [
 				"type",
 				"category",
 				"style",
+				"shark",
+				"sharks",
 				"title"
 			]
 		},
@@ -44,7 +46,7 @@
 	"contexts": [
 		{
 			"description": "Chart completions",
-			"scope": "text.html - source - comment - string",
+			"scope": "(text.html | source.wiki) - source - comment - string",
 			"pattern": "<([a-zA-Z0-9]*)",
 			"completionCaptureIndex": 1,
 			"completionSetNames": [
@@ -53,7 +55,8 @@
 		},
 		{
 			"description": "Chart Attribute Completion",
-			"scope": "text.html meta.tag",
+			//"scope": "text.html meta.tag",
+			"scope": "(text.html | source.wiki) - source - comment - string",
 			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:(?:\\s([a-zA-Z0-9-]+))|\\s)",
 			"completionCaptureIndex": 2,
 			"completionSetNames": [
@@ -62,7 +65,7 @@
 		},
 		{
 			"description": "Chart Attribute Values Completion",
-			"scope": "text.html meta.tag string.quoted",
+			"scope": "(text.html | source.wiki) meta.tag string.quoted",
 			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:\\s([a-zA-Z0-9-]+)\\s*=\\s*(?:[\"'])([a-zA-Z0-9-]*))",
 			"completionCaptureIndex": 3,
 			"completionSetNames": [
