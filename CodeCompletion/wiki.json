@@ -6,31 +6,104 @@
 			"name": "sfs-charts.chart-tag",
 			//"defaultAppend": " type=\"$1\" category=\"$2\" style=\"$3\" title=\"$4\"/>",
 			"defaultAppend": " type=\"${1:value}\" />",
-			//"defaultAppend": " />",
 			"strings": [
-				"statschart"
+				"statschart",
+				{"string": "references", "append": ">\n$0\n</references>\n"}
+			]
+		},
+		{
+			"name": "sfs-charts.template-tag",
+			"defaultAppend": " \n}}",
+			"strings": [
+				{
+					"string": "CompanySidebar", 
+					"append": "\n|Float=${1:right}\n|Company=[[${2:company}\n|Category=${3:category}\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${4}\n|Sharks=${5}\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}"
+				},
+				{
+					"string": "BasicFooter",
+					"append": "|Title=[[${1:seasonname}]]\n|Subhead=[[${2:episodenum}]]\n|[[$3]]\n|[[$4]]\n|[[$5]]\n|[[$6]]\n}}"
+				},
+				{
+					"string": "EpisodePlaceholder",
+					"append": "\n|Category=\n|CategoryName=\n|SeasonNumber=${1:num}\n|Season=${2:name}\n|Episode=${3:episodenum}\n|CompanyOne=\n|CompanyTwo=\n|CompanyThree=\n|CompanyFour=\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${4:dealtype}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n}}"
+				},
+				{
+					"string": "EpisodeUpdate",
+					"append": "\n|Title=${1:episodenum}\n|CompanyOne=\n|CompanyOneDeal=${2:true}\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=\n|CompanyTwoDeal=${3:true}\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=\n|CompanyThreeDeal=${4:true}\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CategoryThreeThree=\n|CompanyFour=\n|CompanyFourDeal=${5:true}\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|${6:shark}\n|${7:shark}\n|${8:shark}\n|${9:shark}\n|${10:shark}\n}}"
+				}
+			]
+		},
+		{
+			"name": "sfs-charts.wiki-link-tag",
+			"defaultAppend":"]]$0",
+			"strings": [
+				{"string": "Category", "append": ":${1:category}]]$0"},
+				{"string": "Category:Barbara", "append": " Corcoran]]"},
+				{"string": "Category:Mark", "append": " Cuban]]"},
+				{"string": "Category:Lori", "append": " Greiner]]"},
+				{"string": "Category:Kevin", "append": " O'Leary]]"},
+				{"string": "Category:Daymond", "append": " John]]"},
+				{"string": "Category:Robert", "append": " Herjavec]]"},
+				{"string": "Category:Anne", "append": " Wojcicki]]"},
+				"Category:Equity",
+				"Category:Equity/Debt",
+				"Category:Debt",
+				"Category:Debt/Royalty",
+				"Category:Royalty",
+				{"string": ":Category:Season One", "append": "|Season One]]"},
+				{"string": ":Category:Season Two", "append": "|Season Two]]"},
+				{"string": ":Category:Season Three", "append": "|Season Three]]"},
+				{"string": ":Category:Season Four", "append": "|Season Four]]"},
+				{"string": ":Category:Season Five", "append": "|Season Five]]"},
+				{"string": ":Category:Season Six", "append": "|Season Six]]"},
+				{"string": ":Category:Season Seven", "append": "|Season Seven]]"},
+				{"string": ":Category:Season Eight", "append": "|Season Eight]]"},
+				{"string": ":Category:Season Nine", "append": "|Season Nine]]"},
+				{"string": ":Category:Season Ten", "append": "|Season Ten]]"},
+				{"string": ":Category:Season Eleven", "append": "|Season Eleven]]"},
+				{"string": "Mark", "append": " Cuban|Mark]]"},
+				"Mark Cuban",
+				{"string": "Lori", "append": " Greiner|Lori]]"},
+				"Lori Greiner",
+				{"string": "Daymond", "append": " John|Daymond]]"},
+				"Daymond John",
+				{"string": "Kevin", "append": " O'Leary|Kevin]]"},
+				"Kevin O'Leary",
+				{"string": "MrWonderful", "replace": "Kevin O'Leary|Mr. Wonderful]]$0"}
 			]
 		},
 		{
 			"name": "sfs-charts.chart-attr",
 			"defaultAppend": "=\"${1:value}\"$0",
 			"strings": [
-				"type",
+				"average",
 				"category",
-				"style",
+				"categories",
+				"end",
+				"limit",
+				"main-cast",
+				"season",
 				"shark",
 				"sharks",
-				"title"
+				"start",
+				"style",
+				"title",
+				"type",
 			]
 		},
 		{
 			"name": "sfs-charts.chart-type-attr-values",
 			"defaultAppend": "$0",
 			"strings": [
+				"bite-by-season",
+				"categories-by-season",
+				"deal-type-mix",
+				"season-investment-by-category",
 				"season-investment-by-type",
 				"shark-amt-investment",
+				"shark-rel-investment",
 				"shark-season-investment",
-				"categories-by-season"
+				"team-ups"
 			]
 		},
 		{
@@ -40,6 +113,39 @@
 				"size-half left",
 				"size-half right",
 				"size-full"
+			]
+		},
+		{
+			"name": "sfs-charts.chart-category-attr-values",
+			"defaultAppend": "$0",
+			"strings": [
+				"APPAREL",
+				"BOX",
+				"FOOD",
+				"GAG",
+				"HEALTH",
+				"HOME",
+				"RECREATION",
+				"SERVICE",
+				"TECH",
+				"TOYS",
+				"UTILITY"
+			]
+		},
+		{
+			"name": "sfs-charts.chart-shark-attr-values",
+			"defaultAppend": "$0",
+			"strings": [
+				"Barbara",
+				"Mark",
+				"Daymond",
+				"Lori",
+				"Kevin",
+				"Robert",
+				"Matt",
+				"Anne",
+				"Daniel",
+				"Arod"
 			]
 		}
 	],
@@ -54,8 +160,25 @@
 			]
 		},
 		{
+			"description": "Template completions",
+			"scope": "(text.html | source.wiki) - source - comment - string",
+			"pattern": "{{([a-zA-Z0-9]*)",
+			"completionCaptureIndex": 1,
+			"completionSetNames": [
+				"sfs-charts.template-tag"
+			]
+		},
+		{
+			"description": "Wiki Link completions",
+			"scope": "(text.html | source.wiki) - source - comment - string",
+			"pattern": "\\[\\[([a-zA-Z0-9:]*)",
+			"completionCaptureIndex": 1,
+			"completionSetNames": [
+				"sfs-charts.wiki-link-tag"
+			]
+		},
+		{
 			"description": "Chart Attribute Completion",
-			//"scope": "text.html meta.tag",
 			"scope": "(text.html | source.wiki) - source - comment - string",
 			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:(?:\\s([a-zA-Z0-9-]+))|\\s)",
 			"completionCaptureIndex": 2,
