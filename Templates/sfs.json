@@ -5,7 +5,7 @@
 		{
 			"name": "Article Placeholder",
 			"fileExtension": "wiki",
-			"snippet": "{{EpisodePlaceholder\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=${5:episodenum}\n|CompanyOne=\n|CompanyTwo=\n|CompanyThree=\n|CompanyFour=\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=Equity\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}\n\n[[Category:Equity]]\n[[Category:Deals]]"
+			"snippet": "{{EpisodePlaceholder\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=[[${5:episodenum}]]\n|CompanyOne=\n|CompanyTwo=\n|CompanyThree=\n|CompanyFour=\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}y\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}\n\n[[Category:{$6}]]\n[[Category:Deals]]"
 		},
 		{
 			"name": "Article - Full",
@@ -15,7 +15,7 @@
 		{
 			"name": "Episode",
 			"fileExtension": "wiki",
-			"snippet": "{{EpisodeUpdate\n|Title=[[Episode 11.07|Episode 11.07 Deals]]\n|CompanyOne=\n|CompanyOneDeal=true\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=\n|CompanyTwoDeal=true\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=\n|CompanyThreeDeal=false\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CategoryThreeThree=\n|CompanyFour=\n|CompanyFourDeal=true\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|[[Mark Cuban]]\n|[[Daymond John]]\n|[[Kevin O'Leary]]\n|[[Lori Greiner]]\n|[[Robert Herjavec]]\n}}"
+			"snippet": "{{EpisodeUpdate\n|Title=[[${1:episodenum}|${1} Deals]]\n|CompanyOne=\n|CompanyOneDeal=true\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=\n|CompanyTwoDeal=true\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=\n|CompanyThreeDeal=false\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CategoryThreeThree=\n|CompanyFour=\n|CompanyFourDeal=true\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|[[${2:shark}]]\n|[[${3:shark}]]\n|[[${4:shark}]]\n|[[${5:shark}]]\n|[[${6:shark}]]\n}}"
 		}
 	]
 }

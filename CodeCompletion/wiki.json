@@ -3,16 +3,15 @@
 	"uuid": "CACA68A6-B67C-428C-BB0C-79E84D19C17B",
 	"completionSets": [
 		{
-			"name": "sfs-charts.chart-tag",
-			//"defaultAppend": " type=\"$1\" category=\"$2\" style=\"$3\" title=\"$4\"/>",
-			"defaultAppend": " type=\"${1:value}\" />",
+			"name": "sfs.parser-tags",
+			"defaultAppend": " type=\"${1:value}\" $0 />",
 			"strings": [
 				"statschart",
 				{"string": "references", "append": ">\n$0\n</references>\n"}
 			]
 		},
 		{
-			"name": "sfs-charts.template-tag",
+			"name": "sfs.template-tags",
 			"defaultAppend": " \n}}",
 			"strings": [
 				{
@@ -21,7 +20,7 @@
 				},
 				{
 					"string": "BasicFooter",
-					"append": "|Title=[[${1:seasonname}]]\n|Subhead=[[${2:episodenum}]]\n|[[$3]]\n|[[$4]]\n|[[$5]]\n|[[$6]]\n}}"
+					"append": "\n|Title=[[${1:seasonname}]]\n|Subhead=[[${2:episodenum}]]\n|[[$3]]\n|[[$4]]\n|[[$5]]\n|[[$6]]\n}}"
 				},
 				{
 					"string": "EpisodePlaceholder",
@@ -34,46 +33,68 @@
 			]
 		},
 		{
-			"name": "sfs-charts.wiki-link-tag",
-			"defaultAppend":"]]$0",
+			"name": "sfs.wiki-tags",
+			"defaultAppend":"]] $0",
 			"strings": [
-				{"string": "Category", "append": ":${1:category}]]$0"},
-				{"string": "Category:Barbara", "append": " Corcoran]]"},
-				{"string": "Category:Mark", "append": " Cuban]]"},
-				{"string": "Category:Lori", "append": " Greiner]]"},
-				{"string": "Category:Kevin", "append": " O'Leary]]"},
-				{"string": "Category:Daymond", "append": " John]]"},
-				{"string": "Category:Robert", "append": " Herjavec]]"},
-				{"string": "Category:Anne", "append": " Wojcicki]]"},
+				{"string": "Category", "append": ":${1:category}]]\n$0"},
+				{"string": "Category:Barbara", "append": " Corcoran]]\n$0"},
+				{"string": "Category:Mark", "append": " Cuban]]\n$0"},
+				{"string": "Category:Lori", "append": " Greiner]]\n$0"},
+				{"string": "Category:Kevin", "append": " O'Leary]]\n$0"},
+				{"string": "Category:Daymond", "append": " John]]\n$0"},
+				{"string": "Category:Robert", "append": " Herjavec]]\n$0"},
+				{"string": "Category:Anne", "append": " Wojcicki]]\n$0"},
 				"Category:Equity",
 				"Category:Equity/Debt",
 				"Category:Debt",
 				"Category:Debt/Royalty",
 				"Category:Royalty",
-				{"string": ":Category:Season One", "append": "|Season One]]"},
-				{"string": ":Category:Season Two", "append": "|Season Two]]"},
-				{"string": ":Category:Season Three", "append": "|Season Three]]"},
-				{"string": ":Category:Season Four", "append": "|Season Four]]"},
-				{"string": ":Category:Season Five", "append": "|Season Five]]"},
-				{"string": ":Category:Season Six", "append": "|Season Six]]"},
-				{"string": ":Category:Season Seven", "append": "|Season Seven]]"},
-				{"string": ":Category:Season Eight", "append": "|Season Eight]]"},
-				{"string": ":Category:Season Nine", "append": "|Season Nine]]"},
-				{"string": ":Category:Season Ten", "append": "|Season Ten]]"},
-				{"string": ":Category:Season Eleven", "append": "|Season Eleven]]"},
-				{"string": "Mark", "append": " Cuban|Mark]]"},
+				"Category:Analysis",
+				{"string": ":Category:Season One", "append": "|Season One]] $0"},
+				{"string": ":Category:Season Two", "append": "|Season Two]] $0"},
+				{"string": ":Category:Season Three", "append": "|Season Three]] $0"},
+				{"string": ":Category:Season Four", "append": "|Season Four]] $0"},
+				{"string": ":Category:Season Five", "append": "|Season Five]] $0"},
+				{"string": ":Category:Season Six", "append": "|Season Six]] $0"},
+				{"string": ":Category:Season Seven", "append": "|Season Seven]] $0"},
+				{"string": ":Category:Season Eight", "append": "|Season Eight]] $0"},
+				{"string": ":Category:Season Nine", "append": "|Season Nine]] $0"},
+				{"string": ":Category:Season Ten", "append": "|Season Ten]] $0"},
+				{"string": ":Category:Season Eleven", "append": "|Season Eleven]] $0"},
+				{"string": ":Category:Apparel", "append": "|Apparel]] $0"},
+				{"string": ":Category:Box", "append": "|Box]] $0"},
+				{"string": ":Category:Fitness", "append": "|Fitness]] $0"},
+				{"string": ":Category:Food", "append": "|Food]] $0"},
+				{"string": ":Category:Gag", "append": "|Gag]] $0"},
+				{"string": ":Category:Health", "append": "|Health]] $0"},
+				{"string": ":Category:Kids", "append": "|Kids]] $0"},
+				{"string": ":Category:Online", "append": "|Online]] $0"},
+				{"string": ":Category:Outdoors", "append": "|Outdoors]] $0"},
+				{"string": ":Category:Recreation", "append": "|Recreation]] $0"},
+				{"string": ":Category:Retail", "append": "|Retail]] $0"},
+				{"string": ":Category:Service", "append": "|Service]] $0"},
+				{"string": ":Category:Tech", "append": "|Tech]] $0"},
+				{"string": ":Category:Toys", "append": "|Toys]] $0"},
+				{"string": ":Category:Utility", "append": "|Utility]] $0"},
+				{"string": "Mark", "append": " Cuban|Mark]] $0"},
 				"Mark Cuban",
-				{"string": "Lori", "append": " Greiner|Lori]]"},
+				{"string": "Lori", "append": " Greiner|Lori]] $0"},
 				"Lori Greiner",
-				{"string": "Daymond", "append": " John|Daymond]]"},
+				{"string": "Daymond", "append": " John|Daymond]] $0"},
 				"Daymond John",
-				{"string": "Kevin", "append": " O'Leary|Kevin]]"},
+				{"string": "Kevin", "append": " O'Leary|Kevin]] $0"},
 				"Kevin O'Leary",
-				{"string": "MrWonderful", "replace": "Kevin O'Leary|Mr. Wonderful]]$0"}
+				{"string": "MrWonderful", "replace": "Kevin O'Leary|Mr. Wonderful]] $0"},
+				{"string": "Barbara", "append": " Corcoran|Barbara]] $0"},
+				"Barbara Corcoran",
+				{"string": "Robert", "append": " Herjavec|Robert]] $0"},
+				"Robert Herjavec",
+				{"string": "Anne", "append": " Wojcicki|Anne]] $0"},
+				"Anne Wojcicki"
 			]
 		},
 		{
-			"name": "sfs-charts.chart-attr",
+			"name": "sfs.statschart.attr",
 			"defaultAppend": "=\"${1:value}\"$0",
 			"strings": [
 				"average",
@@ -92,7 +113,7 @@
 			]
 		},
 		{
-			"name": "sfs-charts.chart-type-attr-values",
+			"name": "sfs.statschart.type.attr.values",
 			"defaultAppend": "$0",
 			"strings": [
 				"bite-by-season",
@@ -107,7 +128,7 @@
 			]
 		},
 		{
-			"name": "sfs-charts.chart-style-attr-values",
+			"name": "sfs.statschart.style.attr.values",
 			"defaultAppend": "$0",
 			"strings": [
 				"size-half left",
@@ -116,7 +137,7 @@
 			]
 		},
 		{
-			"name": "sfs-charts.chart-category-attr-values",
+			"name": "sfs.statschart.category.attr.values",
 			"defaultAppend": "$0",
 			"strings": [
 				"APPAREL",
@@ -133,7 +154,7 @@
 			]
 		},
 		{
-			"name": "sfs-charts.chart-shark-attr-values",
+			"name": "sfs.statschart.shark.attr.values",
 			"defaultAppend": "$0",
 			"strings": [
 				"Barbara",
@@ -156,7 +177,7 @@
 			"pattern": "<([a-zA-Z0-9]*)",
 			"completionCaptureIndex": 1,
 			"completionSetNames": [
-				"sfs-charts.chart-tag"
+				"sfs.parser-tags"
 			]
 		},
 		{
@@ -165,7 +186,7 @@
 			"pattern": "{{([a-zA-Z0-9]*)",
 			"completionCaptureIndex": 1,
 			"completionSetNames": [
-				"sfs-charts.template-tag"
+				"sfs.template-tags"
 			]
 		},
 		{
@@ -174,7 +195,7 @@
 			"pattern": "\\[\\[([a-zA-Z0-9:]*)",
 			"completionCaptureIndex": 1,
 			"completionSetNames": [
-				"sfs-charts.wiki-link-tag"
+				"sfs.wiki-tags"
 			]
 		},
 		{
@@ -183,7 +204,7 @@
 			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:(?:\\s([a-zA-Z0-9-]+))|\\s)",
 			"completionCaptureIndex": 2,
 			"completionSetNames": [
-				"sfs-charts.chart-attr",
+				"sfs.$1.attr",
 			]
 		},
 		{
@@ -192,7 +213,7 @@
 			"pattern": "<([a-zA-Z0-9]*)(?:\\s+[a-zA-Z0-9-:_]+\\s*=\\s*(?:'.*'|\".*\"))*(?:\\s([a-zA-Z0-9-]+)\\s*=\\s*(?:[\"'])([a-zA-Z0-9-]*))",
 			"completionCaptureIndex": 3,
 			"completionSetNames": [
-				"sfs-charts.chart-$2-attr-values"
+				"sfs.$1.$2.attr.values"
 			]
 		}
 	]
