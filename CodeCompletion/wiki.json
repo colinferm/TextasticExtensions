@@ -53,7 +53,7 @@
 				{"string": "Anne", "append": " Wojcicki|Anne]] $0"},
 				"Anne Wojcicki",
 				{"string": "Rohan", "append": " Oza|Rohan]] $0"},
-				"Rohan Oza",
+				"Rohan Oza"
 			]
 		},
 		{
@@ -85,6 +85,7 @@
 				{"string": ":Category:Kids", "append": "|Kids]] $0"},
 				{"string": ":Category:Online", "append": "|Online]] $0"},
 				{"string": ":Category:Outdoors", "append": "|Outdoors]] $0"},
+				{"string": ":Category:Pets", "append": "|Pets]] $0"},
 				{"string": ":Category:Recreation", "append": "|Recreation]] $0"},
 				{"string": ":Category:Retail", "append": "|Retail]] $0"},
 				{"string": ":Category:Service", "append": "|Service]] $0"},
@@ -128,12 +129,23 @@
 				"Category:No Deal",
 				"Category:Online",
 				"Category:Outdoors",
+				"Category:Pets",
 				"Category:Recreation",
 				"Category:Retail",
 				"Category:Service",
 				"Category:Tech",
 				"Category:Toys",
 				"Category:Utility",
+			]
+		},
+		{
+			"name": "sfs.wiki-links",
+			"defaultAppend":"]] $0",
+			"strings": [				
+				{"string": "Direct To Consumer", "append": " |direct to consumer]] $0"},
+				{"string": "Shark Tank Bite", "append": " |bit]] $0"},
+				"royalty",
+				"equity"
 			]
 		},
 		{
@@ -240,7 +252,8 @@
 			"completionSetNames": [
 				"sfs.wiki-sharks",
 				"sfs.wiki-categories",
-				"sfs.wiki-categories-assignment"
+				"sfs.wiki-categories-assignment",
+				"sfs.wiki-links"
 			]
 		},
 		{
