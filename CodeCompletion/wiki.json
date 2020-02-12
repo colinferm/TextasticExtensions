@@ -34,6 +34,34 @@
 			]
 		},
 		{
+			"name": "sfs.template-params",
+			"defaultAppend": "=$0\n",
+			"strings": [
+				"Float",
+				"EOYSales",
+				"CurrentYearSales",
+				"LastYearSales",
+				"TwoYearSales",
+				"Lifetime",
+				"LifeTimeSales",
+				"Category",
+				"AskingEQ",
+				"AskingAmt",
+				"AskingVal",
+				"DealType",
+				"Sharks",
+				"LoanAmt",
+				"LoanInterest",
+				"LoanTerm",
+				"DealEQ",
+				"DealAmt",
+				"DealVal",
+				"Royalty",
+				"RoyaltyTerm",
+				"SharkBite"
+			]
+		},
+		{
 			"name": "sfs.wiki-sharks",
 			"defaultAppend":"]] $0",
 			"strings": [				
@@ -242,6 +270,15 @@
 			"completionCaptureIndex": 1,
 			"completionSetNames": [
 				"sfs.template-tags"
+			]
+		},
+		{
+			"description": "Template parameters completions",
+			"scope": "(text.html | source.wiki) - source - comment - string",
+			"pattern": "^\\|([a-zA-Z0-9]*)",
+			"completionCaptureIndex": 1,
+			"completionSetNames": [
+				"sfs.template-params"
 			]
 		},
 		{
