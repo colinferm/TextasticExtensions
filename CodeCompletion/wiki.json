@@ -35,7 +35,7 @@
 		},
 		{
 			"name": "sfs.template-params",
-			"defaultAppend": "=$0\n",
+			"defaultAppend": "=$0",
 			"strings": [
 				"Float",
 				"EOYSales",
@@ -170,8 +170,11 @@
 			"name": "sfs.wiki-links",
 			"defaultAppend":"]] $0",
 			"strings": [				
-				{"string": "Direct To Consumer", "append": " |direct to consumer]] $0"},
-				{"string": "Shark Tank Bite", "append": " |bit]] $0"},
+				{"string": "Convertible Note", "append": "|convertible note]] $0"},
+				{"string": "Direct To Consumer", "append": "|direct to consumer]] $0"},
+				{"string": "Friends & Family Round", "append": "|friends and family round]] $0"},
+				{"string": "Guest Shark", "append": "|guest shark]] $0"},
+				{"string": "Shark Tank Bite", "append": "|bit]]$0"},
 				"royalty",
 				"equity"
 			]
