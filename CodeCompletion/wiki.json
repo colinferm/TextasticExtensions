@@ -17,19 +17,19 @@
 			"strings": [
 				{
 					"string": "CompanySidebar", 
-					"append": "\n|Float=${1:right}\n|Company=[[${2:company}\n|Category=${3:category}\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${4}\n|Sharks=${5}\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}"
+					"append": "\n|Float=right\n|Category=[[:Category:${4:categoryname}|${4}]]\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:No Deal}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}"
 				},
 				{
 					"string": "BasicFooter",
-					"append": "\n|Title=[[${1:seasonname}]]\n|Subhead=[[${2:episodenum}|$2 Deals]]\n|[[$3]]\n|[[$4]]\n|[[$5]]\n|[[$6]]\n}}"
+					"append": "\n|Title=[[${1:seasonname}]]\n|Subhead=[[${2:episodenum}|${2} Deals]]\n|[[${3:company}]]\n|[[${4:company]]\n|[[${5:company}]]\n|[[${6:company}]]\n}}"
 				},
 				{
 					"string": "EpisodePlaceholder",
-					"append": "\n|Category=\n|CategoryName=\n|SeasonNumber=${1:num}\n|Season=${2:name}\n|Episode=${3:episodenum}\n|CompanyOne=\n|CompanyTwo=\n|CompanyThree=\n|CompanyFour=\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${4:dealtype}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n}}"
+					"append": "\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=[[${4:seasonname}]]\n|Episode=[[${5:episodenum}]]\n|CompanyOne=[[${7:company}]]\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|Company=[[${11:company}]]\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}"
 				},
 				{
 					"string": "EpisodeUpdate",
-					"append": "\n|Title=${1:episodenum}\n|CompanyOne=\n|CompanyOneDeal=${2:true}\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=\n|CompanyTwoDeal=${3:true}\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=\n|CompanyThreeDeal=${4:true}\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CategoryThreeThree=\n|CompanyFour=\n|CompanyFourDeal=${5:true}\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|${6:shark}\n|${7:shark}\n|${8:shark}\n|${9:shark}\n|${10:shark}\n}}"
+					"append": "\n|Title=[[${1:episodenum}|${1} Deals]]\n|CompanyOne=[[${2:company}]]\n|CompanyOneDeal=true\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=[[${3:company}]]\n|CompanyTwoDeal=true\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=[[${4:company}]]\n|CompanyThreeDeal=false\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CompanyFour=[[${5:company}]]\n|CompanyFourDeal=true\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|[[${7:shark}\n|[[${8:shark}\n|[[${9:shark}\n|[[${10:shark}\n|[[${11:shark}\n}}"
 				}
 			]
 		},
@@ -175,6 +175,8 @@
 				{"string": "Friends & Family Round", "append": "|friends and family round]] $0"},
 				{"string": "Guest Shark", "append": "|guest shark]] $0"},
 				{"string": "Shark Tank Bite", "append": "|bit]]$0"},
+				{"string": "Shark Tank Bump", "append": "|Shark Tank bump]] $0"},
+				{"string": "Shark Tank Frenzy", "append": "|frenzy]] $0"},
 				"royalty",
 				"equity"
 			]
