@@ -9,6 +9,7 @@
 				"statschart",
 				{"string": "ref", "append": " name=\"${1:name}\"/>$0"},
 				{"string": "references", "append": ">\n$0\n</references>\n"},
+				{"string": "summary", "append": " show=\"${1:true}\">${2}</summary> $0"},
 			]
 		},
 		{
@@ -81,7 +82,11 @@
 				{"string": "Anne", "append": " Wojcicki|Anne]] $0"},
 				"Anne Wojcicki",
 				{"string": "Rohan", "append": " Oza|Rohan]] $0"},
-				"Rohan Oza"
+				"Rohan Oza",
+				{"string": "Daniel", "append": " Lubetzky|Daniel]] $0"},
+				"Daniel Lubetzky",
+				{"string": "Maria", "append": " Sharapova|Maria]] $0"},
+				"Maria Sharapova"
 			]
 		},
 		{
@@ -135,6 +140,8 @@
 				{"string": "Category:Robert", "append": " Herjavec]]\n$0"},
 				{"string": "Category:Anne", "append": " Wojcicki]]\n$0"},
 				{"string": "Category:Rohan", "append": " Oza]]\n$0"},
+				{"string": "Category:Daniel", "append": " Lubetzky]]\n$0"},
+				{"string": "Category:Maria", "append": " Sharapova]]\n$0"},
 				"Category:Analysis",
 				"Category:Equity",
 				"Category:Equity/Debt",
@@ -254,7 +261,8 @@
 				"Matt",
 				"Anne",
 				"Daniel",
-				"Arod"
+				"Arod",
+				"Maria"
 			]
 		}
 	],
