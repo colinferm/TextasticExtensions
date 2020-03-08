@@ -5,7 +5,7 @@
 		{
 			"name": "Article Placeholder",
 			"fileExtension": "wiki",
-			"snippet": "{{EpisodePlaceholder\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=[[${4:seasonname}]]\n|Episode=[[${5:episodenum}]]\n|CompanyOne=[[${7:company}]]\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|Company=[[${11:company}]]\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}\n\n[[Category:${6}]]\n[[Category:Deals]]"
+			"snippet": "{{EpisodePlaceholder\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=${5:episodenum}\n|CompanyOne=[[${7:company}]]\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|Company=${11:company}\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}\n\n[[Category:${6}]]\n[[Category:Deals]]"
 		},
 		{
 			"name": "Article - Full",
