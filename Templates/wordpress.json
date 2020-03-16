@@ -1,1 +1,31 @@
-{	"uuid": "ED1A8218-8B73-45FC-9FC2-E8BACEA065FA",	"category": "Wordpress",	"templates": [		{			"name": "Required - index.php",			"fileExtension": "php",			"snippet": "<?php get_header(); ?>\n\n<section id=\"primary\" class=\"content-area\">\n\t<main id=\"main\" class=\"site-main\">\n\n\t\t<?php\n\t\tif (have_posts()) {\n\n\t\t\twhile (have_posts()) {\n\t\t\t\tthe_post();\n\t\t\t\t?>\n\t\t\t\t<article id=\"post-<?php the_ID(); ?>\" <?php post_class(); ?>>\n\t\t\t\t\t<header class=\"entry-header\">\n\t\t\t\t\t\t<h2 class=\"entry-title\"><a href=\"<?php echo get_permalink(); ?>\"><?php the_title(); ?></a></h2>\n\t\t\t\t\t</header>\n\t\t\t\t\t<div class=\"entry-content\">\n\t\t\t\t\t\t<?php the_excerpt(); ?>\n\t\t\t\t\t</div>\n\t\t\t\t</article>\n\t\t\t\t<?php\n\t\t\t}\n\t\t}\n\t\t?>\n\n\t</main>\n</section>\n\n<?php get_footer(); ?>"		},		{			"name": "Required - style.css",			"fileExtension": "css",			"snippet": "/*\nTheme Name: ${1:name}\nTheme URI: ${2:siteurl}\nAuthor: ${3:your_name}\nAuthor URI: \nDescription: ${4:theme_description}\nVersion: 1.0\nLicense: GNU General Public License v2 or later\nLicense URI: http://www.gnu.org/licenses/gpl-2.0.html\nText Domain: {$5:lowercased_name}\nTags: ${6:for_distribution}\n*/\n${0}"		},		{			"name": "Required - functions.php",			"fileExtension": "php",			"snippet": ""		},		{			"name": "Required - header.php",			"fileExtension": "php",			"snippet": "<!doctype html>\n<html <?php language_attributes(); ?>>\n<head>\n\t<meta charset=\"<?php bloginfo( 'charset' ); ?>\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\" />\n\t<?php wp_head(); ?>\n</head>\n\n<body <?php body_class(); ?>>\n\t<div id=\"page\" class=\"site\">\n\t\t<div id=\"content\" class=\"site-content\">"		},		{			"name": "Required - footer.php",			"fileExtension": "php",			"snippet": "\t\t</div>\n\t</div>\n\t<?php if (has_nav_menu('footer')) : ?>\n\t\t<nav class=\"footer-navigation\">\n\t\t\t<?php\n\t\t\twp_nav_menu(array(\n\t\t\t\t'theme_location'\t=> 'footer',\n\t\t\t\t'menu_class'\t\t\t=> 'footer-menu',\n\t\t\t\t'depth'\t\t\t\t\t\t=> 1,\n\t\t\t));\n\t\t\t?>\n\t\t</nav>\n\t<?php endif; ?>\n\t<?php wp_footer(); ?>\n</body>\n</html>"		},	]}
+{
+	"uuid": "ED1A8218-8B73-45FC-9FC2-E8BACEA065FA",
+	"category": "Wordpress",
+	"templates": [
+		{
+			"name": "Required - index.php",
+			"fileExtension": "php",
+			"snippet": "<?php get_header(); ?>\n\n<section id=\"primary\" class=\"content-area\">\n\t<main id=\"main\" class=\"site-main\">\n\n\t\t<?php\n\t\tif (have_posts()) {\n\n\t\t\twhile (have_posts()) {\n\t\t\t\tthe_post();\n\t\t\t\t?>\n\t\t\t\t<article id=\"post-<?php the_ID(); ?>\" <?php post_class(); ?>>\n\t\t\t\t\t<header class=\"entry-header\">\n\t\t\t\t\t\t<h2 class=\"entry-title\"><a href=\"<?php echo get_permalink(); ?>\"><?php the_title(); ?></a></h2>\n\t\t\t\t\t</header>\n\t\t\t\t\t<div class=\"entry-content\">\n\t\t\t\t\t\t<?php the_excerpt(); ?>\n\t\t\t\t\t</div>\n\t\t\t\t</article>\n\t\t\t\t<?php\n\t\t\t}\n\t\t}\n\t\t?>\n\n\t</main>\n</section>\n\n<?php get_footer(); ?>"
+		},
+		{
+			"name": "Required - style.css",
+			"fileExtension": "css",
+			"snippet": "/*\nTheme Name: ${1:name}\nTheme URI: ${2:siteurl}\nAuthor: ${3:your_name}\nAuthor URI: \nDescription: ${4:theme_description}\nVersion: 1.0\nLicense: GNU General Public License v2 or later\nLicense URI: http://www.gnu.org/licenses/gpl-2.0.html\nText Domain: {$5:lowercased_name}\nTags: ${6:for_distribution}\n*/\n${0}"
+		},
+		{
+			"name": "Required - functions.php",
+			"fileExtension": "php",
+			"snippet": ""
+		},
+		{
+			"name": "Required - header.php",
+			"fileExtension": "php",
+			"snippet": "<!doctype html>\n<html <?php language_attributes(); ?>>\n<head>\n\t<meta charset=\"<?php bloginfo( 'charset' ); ?>\" />\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\" />\n\t<?php wp_head(); ?>\n</head>\n\n<body <?php body_class(); ?>>\n\t<div id=\"page\" class=\"site\">\n\t\t<div id=\"content\" class=\"site-content\">"
+		},
+		{
+			"name": "Required - footer.php",
+			"fileExtension": "php",
+			"snippet": "\t\t</div>\n\t</div>\n\t<?php if (has_nav_menu('footer')) : ?>\n\t\t<nav class=\"footer-navigation\">\n\t\t\t<?php\n\t\t\twp_nav_menu(array(\n\t\t\t\t'theme_location'\t=> 'footer',\n\t\t\t\t'menu_class'\t\t\t=> 'footer-menu',\n\t\t\t\t'depth'\t\t\t\t\t\t=> 1,\n\t\t\t));\n\t\t\t?>\n\t\t</nav>\n\t<?php endif; ?>\n\t<?php wp_footer(); ?>\n</body>\n</html>"
+		},
+	]
+}
