@@ -86,7 +86,9 @@
 				{"string": "Daniel", "append": " Lubetzky|Daniel]] $0"},
 				"Daniel Lubetzky",
 				{"string": "Maria", "append": " Sharapova|Maria]] $0"},
-				"Maria Sharapova"
+				"Maria Sharapova",
+				{"string": "Katrina", "append": " Lake|Katrina]] $0"},
+				"Katrina Lake"
 			]
 		},
 		{
@@ -142,6 +144,7 @@
 				{"string": "Category:Rohan", "append": " Oza]]\n$0"},
 				{"string": "Category:Daniel", "append": " Lubetzky]]\n$0"},
 				{"string": "Category:Maria", "append": " Sharapova]]\n$0"},
+				{"string": "Category:Katrina", "append": " Lake]]\n$0"},
 				"Category:Analysis",
 				"Category:Equity",
 				"Category:Equity/Debt",
@@ -177,6 +180,7 @@
 			"name": "sfs.wiki-links",
 			"defaultAppend":"]] $0",
 			"strings": [				
+				{"string": "Advisory Shares", "append": "|advisory shares]] $0"},
 				{"string": "Convertible Note", "append": "|convertible note]] $0"},
 				{"string": "Direct To Consumer", "append": "|direct to consumer]] $0"},
 				{"string": "Friends & Family Round", "append": "|friends and family round]] $0"},
