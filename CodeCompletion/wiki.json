@@ -107,6 +107,7 @@
 				{"string": ":Category:Season Nine", "append": "|Season Nine]] $0"},
 				{"string": ":Category:Season Ten", "append": "|Season Ten]] $0"},
 				{"string": ":Category:Season Eleven", "append": "|Season Eleven]] $0"},
+				{"string": ":Category:Season Twelve", "append": "|Season Twelve]] $0"},
 				{"string": ":Category:Apparel", "append": "|Apparel]] $0"},
 				{"string": ":Category:Accessories", "append": "|Accessories]] $0"},
 				{"string": ":Category:Analysis", "append": "|analysis]] $0"},
@@ -125,6 +126,7 @@
 				{"string": ":Category:Recreation", "append": "|Recreation]] $0"},
 				{"string": ":Category:Retail", "append": "|Retail]] $0"},
 				{"string": ":Category:Service", "append": "|Service]] $0"},
+				{"string": ":Category:Supplement", "append": "|Supplement]] $0"},
 				{"string": ":Category:Tech", "append": "|Tech]] $0"},
 				{"string": ":Category:Toys", "append": "|Toys]] $0"},
 				{"string": ":Category:Utility", "append": "|Utility]] $0"},
@@ -330,4 +332,4 @@
 			]
 		}
 	]
-}
+	}
