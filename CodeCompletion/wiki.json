@@ -189,6 +189,8 @@
 				{"string": "Direct To Consumer", "append": "|direct to consumer]] $0"},
 				{"string": "Friends & Family Round", "append": "|friends and family round]] $0"},
 				{"string": "Guest Shark", "append": "|guest shark]] $0"},
+				{"string": "Runway (term)", "append": "|runway]] $0"},
+				{"string": "Vest (term)", "append": "|vest]] $0"},
 				{"string": "Shark Tank Bite", "append": "|bit]]$0"},
 				{"string": "Shark Tank Bump", "append": "|Shark Tank bump]] $0"},
 				{"string": "Shark Tank Frenzy", "append": "|frenzy]] $0"},
