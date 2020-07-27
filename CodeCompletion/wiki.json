@@ -89,7 +89,9 @@
 				{"string": "Maria", "append": " Sharapova|Maria]] $0"},
 				"Maria Sharapova",
 				{"string": "Katrina", "append": " Lake|Katrina]] $0"},
-				"Katrina Lake"
+				"Katrina Lake",
+				{"string": "Matt", "append": " Higgins|Matt]] $0"},
+				"Matt Higgins"
 			]
 		},
 		{
@@ -177,6 +179,7 @@
 				"Category:Tech",
 				"Category:Toys",
 				"Category:Utility",
+				"First Rule of Shark Tank"
 			]
 		},
 		{
