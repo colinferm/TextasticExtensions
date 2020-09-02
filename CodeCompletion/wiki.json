@@ -31,6 +31,10 @@
 				{
 					"string": "EpisodeUpdate",
 					"append": "\n|Title=[[${1:episodenum}|${1} Deals]]\n|CompanyOne=[[${2:company}]]\n|CompanyOneDeal=true\n|SummaryOne=\n|CategoryOneOne=\n|CategoryOneTwo=\n|CompanyTwo=[[${3:company}]]\n|CompanyTwoDeal=true\n|SummaryTwo=\n|CategoryTwoOne=\n|CategoryTwoTwo=\n|CompanyThree=[[${4:company}]]\n|CompanyThreeDeal=false\n|SummaryThree=\n|CategoryThreeOne=\n|CategoryThreeTwo=\n|CompanyFour=[[${5:company}]]\n|CompanyFourDeal=true\n|SummaryFour=\n|CategoryFourOne=\n|CategoryFourTwo=\n|CategoryFourThree=\n|[[${7:shark}\n|[[${8:shark}\n|[[${9:shark}\n|[[${10:shark}\n|[[${11:shark}\n}}"
+				},
+				{
+					"string": "ControversialCategory",
+					"append": "\n|${1:description}\n}}\n${0}"
 				}
 			]
 		},
@@ -60,7 +64,8 @@
 				"Royalty",
 				"RoyaltyTerm",
 				"SharkBite",
-				"MainCast"
+				"MainCast",
+				"NewBiz"
 			]
 		},
 		{
@@ -197,6 +202,7 @@
 				{"string": "Shark Tank Bite", "append": "|bit]]$0"},
 				{"string": "Shark Tank Bump", "append": "|Shark Tank bump]] $0"},
 				{"string": "Shark Tank Frenzy", "append": "|frenzy]] $0"},
+				{"string": "Equity Distribution", "append": "|equity distribution]] $0"},
 				"royalty",
 				"equity"
 			]
