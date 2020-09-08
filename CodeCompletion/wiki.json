@@ -184,7 +184,8 @@
 				"Category:Tech",
 				"Category:Toys",
 				"Category:Utility",
-				"First Rule of Shark Tank"
+				"First Rule of Shark Tank",
+				"Two Market Problem"
 			]
 		},
 		{
@@ -203,6 +204,7 @@
 				{"string": "Shark Tank Bump", "append": "|Shark Tank bump]] $0"},
 				{"string": "Shark Tank Frenzy", "append": "|frenzy]] $0"},
 				{"string": "Equity Distribution", "append": "|equity distribution]] $0"},
+				{"string": "Venture Capital", "append": "|venture capital]] $0"},
 				"royalty",
 				"equity"
 			]
