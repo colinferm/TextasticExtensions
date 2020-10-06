@@ -18,7 +18,7 @@
 			"strings": [
 				{
 					"string": "CompanySidebar", 
-					"append": "\n|Float=right\n|Category=[[:Category:${4:categoryname}|${4}]]\n|Company=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:No Deal}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}"
+					"append": "\n|Float=right\n|Category=[[:Category:${4:categoryname}|${4}]]\n|Company=\n|Location=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:No Deal}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n}}"
 				},
 				{
 					"string": "BasicFooter",
@@ -30,7 +30,7 @@
 				},
 				{
 					"string": "ShortDealSummary",
-					"append": "\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=${5:episodenum}]]\n|CompanyOne=[[${7:company}\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|Company=${11:company}\n|Location=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}"
+					"append": "\n|Category=${1:categorycode}\n|CategoryName=${2:categoryname}\n|SeasonNumber=${3:seasonnum}\n|Season=${4:seasonname}\n|Episode=${5:episodenum}]]\n|CompanyOne=[[${7:company}\n|CompanyTwo=[[${8:company}]]\n|CompanyThree=[[${9:company}]]\n|CompanyFour=[[${10:company}]]\n|MainCast=false\n|Company=${11:company}\n|Location=\n|AskingAmt=\n|AskingEQ=\n|AskingVal=\n|DealType=${6:type}\n|Sharks=\n|DealAmt=\n|DealEQ=\n|DealVal=\n|SharkBite=\n|Filler=\n\n}}"
 				},
 				{
 					"string": "EpisodeUpdate",
@@ -66,6 +66,7 @@
 				"LoanAmt",
 				"LoanInterest",
 				"LoanTerm",
+				"Location",
 				"DealEQ",
 				"DealAmt",
 				"DealVal",
@@ -73,7 +74,8 @@
 				"RoyaltyTerm",
 				"SharkBite",
 				"MainCast",
-				"NewBiz"
+				"NewBiz",
+				"CompanyFive"
 			]
 		},
 		{
@@ -104,7 +106,11 @@
 				{"string": "Katrina", "append": " Lake|Katrina]] $0"},
 				"Katrina Lake",
 				{"string": "Matt", "append": " Higgins|Matt]] $0"},
-				"Matt Higgins"
+				"Matt Higgins",
+				{"string": "Kendra", "append": " Scott|Kendra]] $0"},
+				"Kendra Scott",
+				{"string": "Blake", "append": " Mycoskie|Blake]] $0"},
+				"Blake Mycoskie"
 			]
 		},
 		{
@@ -131,6 +137,7 @@
 				{"string": ":Category:Box", "append": "|Box]] $0"},
 				{"string": ":Category:Fitness", "append": "|Fitness]] $0"},
 				{"string": ":Category:Food", "append": "|Food]] $0"},
+				{"string": ":Category:Franchise", "append": "|Franchise]] $0"},
 				{"string": ":Category:Gag", "append": "|Gag]] $0"},
 				{"string": ":Category:Health", "append": "|Health]] $0"},
 				{"string": ":Category:Home", "append": "|Home]] $0"},
@@ -163,6 +170,8 @@
 				{"string": "Category:Daniel", "append": " Lubetzky]]\n$0"},
 				{"string": "Category:Maria", "append": " Sharapova]]\n$0"},
 				{"string": "Category:Katrina", "append": " Lake]]\n$0"},
+				{"string": "Category:Kendra", "append": " Scott]]\n$0"},
+				{"string": "Category:Blake", "append": " Mycoskie]]\n$0"},
 				"Category:Analysis",
 				"Category:Equity",
 				"Category:Equity/Debt",
