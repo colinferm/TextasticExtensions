@@ -43,6 +43,14 @@
 				{
 					"string": "SocialBox",
 					"append": "\n|Content=${1:text}\n|Widget=<html>${2:embed}</html>\n}}"
+				},
+				{
+					"string": "BasicSidebar",
+					"append": "\n|Title=${1:title}\n|$0\n}}\n"
+				},
+				{
+					"string": "TermsSidebar",
+					"append": "}}\n$0"
 				}
 			]
 		},
@@ -181,7 +189,6 @@
 				"Category:Royalty",
 				"Category:Apparel",
 				"Category:Accessories",
-				"Category:Analysis",
 				"Category:Beauty",
 				"Category:Beverage",
 				"Category:Box",
@@ -222,7 +229,9 @@
 				{"string": "Shark Tank Frenzy", "append": "|frenzy]] $0"},
 				{"string": "Equity Distribution", "append": "|equity distribution]] $0"},
 				{"string": "Venture Capital", "append": "|venture capital]] $0"},
+				{"string": "Venture Debt", "append": "|venture debt]] $0"},
 				{"string": "Intellectual Property", "append": "|intellectual property]] $0"},
+				{"string": "Revolving Credit Line", "append": "|revolving line of credit]] $0"},
 				"royalty",
 				"equity"
 			]
